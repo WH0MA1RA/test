@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Gallery</title>
+    <style>
+        body {
+            background-color: rgb(62, 54, 46);
+            color: rgb(172, 137, 104);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .profile-table, .gallery-table {
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .profile-table td, .gallery-table td {
+            vertical-align: top;
+        }
+        .profile-table {
+            display: table;
+            margin: 0 auto;
+        }
+        .profile-table td {
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .gallery-table {
+            display: table;
+            margin: 0 auto;
+        }
+        .gallery-table td {
+            text-align: center;
+            padding: 10px;
+        }
+        .gallery-img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: rgb(50, 50, 50); 
+            color: rgb(172, 137, 104); 
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-top: auto;
+        }
+        footer a {
+            color: rgb(172, 137, 104); 
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <table class="profile-table">
+        <tr>
+            <td>
+                <img src="informal pic 2.jpg" alt="Your Image" class="profile-img">
+            </td>
+            <td>
+                <p>Hello! My name is Nurhumairah binti Azmi. Mostly, they call me Maira. I am currently a dedicated student pursuing a Bachelor of Information Science (Hons) in Library Management, under the course code CDIM260, at UiTM Kampus Rembau. As the youngest in my family, I bring a unique blend of youthful energy and a passion for learning to everything I do. My journey in the realm of library management is fueled by a love for knowledge and an unwavering commitment to preserving and organizing information. I am excited to transform my academic experiences into a fulfilling career, where I can contribute to the evolving world of information science.</p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="gallery-table">
+        <tr>
+            <td>
+                <a href="P1.html">
+                    <img src="n1.jpg" alt="Image 1" class="gallery-img">
+                </a>
+                <p> ABOUT ME </p>
+            </td>
+            <td>
+                <a href="P2.html">
+                    <img src="n2.jpg" alt="Image 2" class="gallery-img">
+                </a>
+                <p> MY BIODATA </p>
+            </td>
+            <td>
+                <a href="P3.html">
+                    <img src="n3.jpg" alt="Image 3" class="gallery-img">
+                </a>
+                <p> MY SOCIAL MEDIA</p>
+            </td>
+            <td>
+                <a href="P4.html">
+                    <img src="n4.jpg" alt="Image 4" class="gallery-img">
+                </a>
+                <p> MY GALLERY </p>
+            </td>
+        </tr>
+    </table>
+
+    <button onclick="location.href='home.html'">BACK</button>
+    
+    <footer>
+        &copy; 2024 NURHUMAIRAH BINTI AZMI | 
+        <a href="mailto:your.email@example.com">Email Me</a> | 
+        <a href="tel:+1234567890">Call Me</a> | 
+    </footer>
+
+</body>
+</html>
+

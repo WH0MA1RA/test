@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body {
+            background-color: rgb(62, 54, 46);
+            color: rgb(172, 137, 104);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item p {
+            text-align: center;
+            margin: 5px 0 0;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .lightbox:target {
+            display: flex;
+        }
+        footer {
+            background-color: rgb(50, 50, 50);
+            color: rgb(172, 137, 104);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: rgb(172, 137, 104);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>My Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="#img1"><img src="uku1.webp" alt="Drawing and Sketching"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img2"><img src="uku2.jpg" alt="Playing Ukulele"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img3"><img src="ske1.jpg" alt="Cycling"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img4"><img src="ske2.jpg" alt="Photography"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img5"><img src="bic1.jpg" alt="Cooking"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img6"><img src="bic2.jpg" alt="Reading"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img7"><img src="pho1.jpg" alt="Traveling"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img8"><img src="pho2.jpg" alt="Painting"></a>
+        </div>
+    </div>
+
+    <!-- Lightbox modals -->
+    <div id="img1" class="lightbox">
+        <a href="#_"><img src="uku1.webp" alt="Drawing and Sketching"></a>
+    </div>
+    <div id="img2" class="lightbox">
+        <a href="#_"><img src="uku2.jpg" alt="Playing Ukulele"></a>
+    </div>
+    <div id="img3" class="lightbox">
+        <a href="#_"><img src="ske1.jpg" alt="Cycling"></a>
+    </div>
+    <div id="img4" class="lightbox">
+        <a href="#_"><img src="ske2.jpg" alt="Photography"></a>
+    </div>
+    <div id="img5" class="lightbox">
+        <a href="#_"><img src="bic1.jpg" alt="Cooking"></a>
+    </div>
+    <div id="img6" class="lightbox">
+        <a href="#_"><img src="bic2.jpg" alt="Reading"></a>
+    </div>
+    <div id="img7" class="lightbox">
+        <a href="#_"><img src="pho1.jpg" alt="Traveling"></a>
+    </div>
+    <div id="img8" class="lightbox">
+        <a href="#_"><img src="pho2.jpg" alt="Painting"></a>
+    </div>
+</div>
+
+<button onclick="location.href='nextpage.html'">BACK</button>
+
+<footer>
+    &copy; 2024 NURHUMAIRAH BINTI AZMI | 
+    <a href="mailto:nurmaira03@gmail.com">Email Me</a> | 
+    <a href="tel:+01123789297">Call Me</a> | 
+
+</footer>
+
+</body>
+</html>
